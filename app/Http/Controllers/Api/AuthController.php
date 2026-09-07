@@ -20,7 +20,7 @@ class AuthController extends Controller
     public function register(RegistrationRequest $request)
     {
         $validatedData = $request->validated();
-        $validatedData['role'] = User::MANAGER;
+        // $validatedData['role'] = User::MANAGER;
 
         $user = $this->userRepository->create($validatedData);
 
