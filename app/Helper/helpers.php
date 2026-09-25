@@ -41,7 +41,7 @@ if (!function_exists('errorJWTTokenResponse')) {
 if (!function_exists('successJWTTokenResponse')) {
     function successJWTTokenResponse($message = '', $code = "", $data = null, $status = 200 ) {
         $response = [
-            'success' => false,
+            'success' => true,
             'message' => $message,
             'code' => $code,
             'data' => $data
